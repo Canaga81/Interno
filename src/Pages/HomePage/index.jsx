@@ -1,12 +1,19 @@
+import Banner from "../../Components/Banner";
 import Navigation from "../../Components/Navigation";
 
 const HomePage = () => {
+
   return (
+
     <div>
+
       <Navigation />
-      <h1>Home</h1>
+      <Banner />
+
     </div>
+
   )
+  
 }
 
 export default HomePage

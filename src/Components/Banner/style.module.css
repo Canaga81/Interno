@@ -1,0 +1,37 @@
+.banner {
+    background-image: url('./Photo.jpg');
+    height: calc(100vh - 55px);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    border-bottom-left-radius: 180px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.h2_text {
+    max-width: 385px;
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125%; /* 106.25px */
+}
+.p_text {
+    max-width: 450px;
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+}
