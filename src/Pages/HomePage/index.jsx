@@ -1,5 +1,6 @@
 import Banner from "../../Components/Banner";
 import Navigation from "../../Components/Navigation";
+import WorkPlanCards from "../../Components/WorkPlanCards";
 
 const HomePage = () => {
 
@@ -9,6 +10,7 @@ const HomePage = () => {
 
       <Navigation />
       <Banner />
+      <WorkPlanCards />
 
     </div>
 
