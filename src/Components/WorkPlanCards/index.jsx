@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./style.module.css"
+import { Link } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai"
 
 const _url = 'http://localhost:3000/WorkPlan';
 
@@ -30,6 +32,10 @@ const WorkPlanCards = () => {
 
                 <h3>{title}</h3>
                 <p>{description}</p>
+
+                <Link className={styles.readMoreButton} to={`/WorkPlanCardDetail/${id}`}>
+                  Read More {" "} <span><AiOutlineArrowRight /></span>
+                </Link>
                 
               </div>
 

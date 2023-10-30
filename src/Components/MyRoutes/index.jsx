@@ -4,43 +4,49 @@ import ErrorPage from "../../Pages/Error";
 import HomePage from "../../Pages/HomePage";
 import Project from "../../Pages/Project";
 import Services from "../../Pages/Services";
+import WorkPlanCardDetail from "../../Pages/WorkPlanCardDetail";
 
 export const myRoutes = [
-    
+
     {
         id: 1,
         path: '/',
         element: <HomePage />,
-        title:'Home'
+        title: 'Home'
     },
     {
         id: 2,
         path: '/services',
         element: <Services />,
-        title:'Services'  
+        title: 'Services'
     },
     {
         id: 3,
         path: '/project',
         element: <Project />,
-        title:'Project'  
+        title: 'Project'
     },
     {
         id: 4,
         path: '/blog',
         element: <Blog />,
-        title:'Blog'  
+        title: 'Blog'
     },
     {
         id: 5,
         path: '/contack',
         element: <Contack />,
-        title:'Contack'  
+        title: 'Contack'
     },
     {
         id: 6,
         path: '*',
-        element: <ErrorPage />, 
+        element: <ErrorPage />,
+    },
+    {
+        id: 7,
+        path: '/WorkPlanCardDetail/:id',
+        element: <WorkPlanCardDetail />,
     },
 
 ];

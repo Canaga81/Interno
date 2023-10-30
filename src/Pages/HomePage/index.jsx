@@ -1,21 +1,29 @@
+import { Helmet } from "react-helmet";
 import Banner from "../../Components/Banner";
 import Navigation from "../../Components/Navigation";
 import WorkPlanCards from "../../Components/WorkPlanCards";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
 
   return (
 
-    <div>
+    <motion.div initial={{ opacity: 0 }}
+      transition={{ duration: '1' }}
+      whileInView={{ opacity: 1 }}>
+      
+      <Helmet>
+        <title>Interno</title>
+      </Helmet>
 
       <Navigation />
       <Banner />
       <WorkPlanCards />
 
-    </div>
+    </motion.div>
 
-  )
-  
-}
+  );
 
-export default HomePage
+};
+
+export default HomePage;
