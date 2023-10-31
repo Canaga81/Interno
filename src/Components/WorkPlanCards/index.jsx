@@ -14,6 +14,7 @@ const WorkPlanCards = () => {
     axios.get( _url ).then( ( { data } ) => {
       setCards( data );
     } );
+    
   }, [] );
 
   return (
