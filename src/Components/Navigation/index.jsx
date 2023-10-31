@@ -10,7 +10,7 @@ const Navigation = () => {
                     <div className="logo">
                         <Link to='/'><img src="../Logo.svg" alt="" /></Link>
                     </div>
-                    <nav>
+                    <nav className = "d-none d-md-block">
                         {
                             myRoutes.map( ( { id, path, title } ) => {
                                 return <NavLink className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink} key={id} to={path}>{title}</NavLink>;

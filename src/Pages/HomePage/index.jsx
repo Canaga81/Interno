@@ -3,6 +3,7 @@ import Banner from "../../Components/Banner";
 import Navigation from "../../Components/Navigation";
 import WorkPlanCards from "../../Components/WorkPlanCards";
 import { motion } from "framer-motion";
+import Stylishly from "../../Components/Stylishly";
 
 const HomePage = () => {
 
@@ -13,12 +14,15 @@ const HomePage = () => {
       whileInView={{ opacity: 1 }}>
       
       <Helmet>
+
         <title>Interno</title>
+        
       </Helmet>
 
       <Navigation />
       <Banner />
       <WorkPlanCards />
+      <Stylishly />
 
     </motion.div>
 

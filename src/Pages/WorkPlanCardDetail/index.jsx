@@ -16,7 +16,6 @@ const WorkPlanCardDetail = () => {
     useEffect( () => {
         axios.get( URL + id ).then( ( { data } ) => {
             setPlan( data );
-            console.log( data );
         } );
     }, [] );
 
